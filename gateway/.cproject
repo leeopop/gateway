@@ -3,7 +3,9 @@
 	<storageModule moduleId="org.eclipse.cdt.core.settings">
 		<cconfiguration id="cdt.managedbuild.config.gnu.exe.debug.1343683375">
 			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="cdt.managedbuild.config.gnu.exe.debug.1343683375" moduleId="org.eclipse.cdt.core.settings" name="Debug">
-				<externalSettings/>
+				<externalSettings>
+					<externalSetting/>
+				</externalSettings>
 				<extensions>
 					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
 					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
@@ -20,31 +22,31 @@
 							<targetPlatform id="cdt.managedbuild.target.gnu.platform.exe.debug.1546421168" name="Debug Platform" superClass="cdt.managedbuild.target.gnu.platform.exe.debug"/>
 							<builder buildPath="${workspace_loc:/gateway}/Debug" id="cdt.managedbuild.target.gnu.builder.exe.debug.1124629367" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" superClass="cdt.managedbuild.target.gnu.builder.exe.debug"/>
 							<tool id="cdt.managedbuild.tool.gnu.archiver.base.1736531219" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.base"/>
-							<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.484550781" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug">
+							<tool command="g++ -std=gnu++11" commandLinePattern="${COMMAND} ${FLAGS} ${OUTPUT_FLAG} ${OUTPUT_PREFIX}${OUTPUT} ${INPUTS}" id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.484550781" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug">
 								<option id="gnu.cpp.compiler.exe.debug.option.optimization.level.1797198358" name="Optimization Level" superClass="gnu.cpp.compiler.exe.debug.option.optimization.level" value="gnu.cpp.compiler.optimization.level.none" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.exe.debug.option.debugging.level.1285771644" name="Debug Level" superClass="gnu.cpp.compiler.exe.debug.option.debugging.level" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.option.include.paths.1431614395" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
 									<listOptionValue builtIn="false" value="/usr/include"/>
-									<listOptionValue builtIn="false" value="/usr/include/c++/4.7"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/gateway/dpdk/build/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/gateway/dpdk/x86_64-default-linuxapp-gcc/include}&quot;"/>
+									<listOptionValue builtIn="false" value="/usr/include/c++/4.7.3"/>
 								</option>
-								<option id="gnu.cpp.compiler.option.other.other.567787763" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-std=c++11 -c -fmessage-length=0" valueType="string"/>
-								<option id="gnu.cpp.compiler.option.preprocessor.def.1206698936" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" valueType="definedSymbols">
-									<listOptionValue builtIn="false" value="RTE_MAX_LCORE=16"/>
-								</option>
+								<option id="gnu.cpp.compiler.option.other.other.567787763" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-c -fmessage-length=0" valueType="string"/>
+								<option id="gnu.cpp.compiler.option.preprocessor.def.1206698936" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def"/>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.256396100" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
 							</tool>
-							<tool id="cdt.managedbuild.tool.gnu.c.compiler.exe.debug.1529534168" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.exe.debug">
+							<tool command="gcc -std=gnu++11" commandLinePattern="${COMMAND} ${FLAGS} ${OUTPUT_FLAG} ${OUTPUT_PREFIX}${OUTPUT} ${INPUTS}" id="cdt.managedbuild.tool.gnu.c.compiler.exe.debug.1529534168" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.exe.debug">
 								<option defaultValue="gnu.c.optimization.level.none" id="gnu.c.compiler.exe.debug.option.optimization.level.841711554" name="Optimization Level" superClass="gnu.c.compiler.exe.debug.option.optimization.level" valueType="enumerated"/>
 								<option id="gnu.c.compiler.exe.debug.option.debugging.level.1852101353" name="Debug Level" superClass="gnu.c.compiler.exe.debug.option.debugging.level" value="gnu.c.debugging.level.max" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.misc.other.1710699062" name="Other flags" superClass="gnu.c.compiler.option.misc.other" value="-c -fmessage-length=0" valueType="string"/>
 								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1841857693" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
 							</tool>
 							<tool id="cdt.managedbuild.tool.gnu.c.linker.exe.debug.399565986" name="GCC C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.exe.debug"/>
 							<tool id="cdt.managedbuild.tool.gnu.cpp.linker.exe.debug.1388024789" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.exe.debug">
 								<option id="gnu.cpp.link.option.paths.344752333" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/gateway/dpdk/build/lib}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/gateway/dpdk/x86_64-default-linuxapp-gcc/lib}&quot;"/>
 								</option>
 								<option id="gnu.cpp.link.option.libs.160025038" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" valueType="libs">
+									<listOptionValue builtIn="false" value="numa"/>
 									<listOptionValue builtIn="false" value="rte_eal"/>
 									<listOptionValue builtIn="false" value="rte_timer"/>
 									<listOptionValue builtIn="false" value="rte_malloc"/>
@@ -101,9 +103,15 @@
 								<option id="gnu.cpp.compiler.option.include.paths.432662853" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
 									<listOptionValue builtIn="false" value="/usr/include"/>
 									<listOptionValue builtIn="false" value="/usr/include/c++/4.7"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/gateway/dpdk/build/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/gateway/dpdk/x86_64-default-linuxapp-gcc/include}&quot;"/>
+									<listOptionValue builtIn="false" value="/usr/include/c++/4.7/bits"/>
+									<listOptionValue builtIn="false" value="/usr/include/c++/4.7/ext"/>
+									<listOptionValue builtIn="false" value="/usr/include/c++/4.7/parallel"/>
+									<listOptionValue builtIn="false" value="/usr/include/c++/4.7/profile"/>
+									<listOptionValue builtIn="false" value="/usr/include/c++/4.7/tr1"/>
+									<listOptionValue builtIn="false" value="/usr/include/c++/4.7/tr2"/>
 								</option>
-								<option id="gnu.cpp.compiler.option.other.other.1292123702" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-std=c++11 -c -fmessage-length=0" valueType="string"/>
+								<option id="gnu.cpp.compiler.option.other.other.1292123702" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-c -fmessage-length=0" valueType="string"/>
 								<option id="gnu.cpp.compiler.option.preprocessor.def.1423813701" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="RTE_MAX_LCORE=16"/>
 								</option>
@@ -112,25 +120,27 @@
 							<tool id="cdt.managedbuild.tool.gnu.c.compiler.exe.release.1404288894" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.exe.release">
 								<option defaultValue="gnu.c.optimization.level.most" id="gnu.c.compiler.exe.release.option.optimization.level.1674276231" name="Optimization Level" superClass="gnu.c.compiler.exe.release.option.optimization.level" valueType="enumerated"/>
 								<option id="gnu.c.compiler.exe.release.option.debugging.level.2100919274" name="Debug Level" superClass="gnu.c.compiler.exe.release.option.debugging.level" value="gnu.c.debugging.level.none" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.misc.other.1090971210" name="Other flags" superClass="gnu.c.compiler.option.misc.other" value="-std-c++11 -c -fmessage-length=0" valueType="string"/>
 								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1813175050" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
 							</tool>
 							<tool id="cdt.managedbuild.tool.gnu.c.linker.exe.release.1425383167" name="GCC C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.exe.release"/>
 							<tool id="cdt.managedbuild.tool.gnu.cpp.linker.exe.release.345976756" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.exe.release">
 								<option id="gnu.cpp.link.option.paths.660533652" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/gateway/dpdk/build/lib}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/gateway/dpdk/x86_64-default-linuxapp-gcc/lib}&quot;"/>
 								</option>
 								<option id="gnu.cpp.link.option.libs.2146152207" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" valueType="libs">
+									<listOptionValue builtIn="false" value="numa"/>
+									<listOptionValue builtIn="false" value="rte_eal"/>
 									<listOptionValue builtIn="false" value="rte_timer"/>
 									<listOptionValue builtIn="false" value="rte_malloc"/>
 									<listOptionValue builtIn="false" value="rte_mempool"/>
 									<listOptionValue builtIn="false" value="rte_mbuf"/>
 									<listOptionValue builtIn="false" value="rte_ring"/>
-									<listOptionValue builtIn="false" value="ethdev"/>
 									<listOptionValue builtIn="false" value="rte_pmd_ring"/>
 									<listOptionValue builtIn="false" value="rte_pmd_e1000"/>
 									<listOptionValue builtIn="false" value="rte_pmd_ixgbe"/>
 									<listOptionValue builtIn="false" value="rte_pmd_virtio"/>
-									<listOptionValue builtIn="false" value="rte_eal"/>
+									<listOptionValue builtIn="false" value="ethdev"/>
 									<listOptionValue builtIn="false" value="pthread"/>
 									<listOptionValue builtIn="false" value="dl"/>
 								</option>
