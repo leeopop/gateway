@@ -53,10 +53,8 @@
 									<listOptionValue builtIn="false" value="rte_mempool"/>
 									<listOptionValue builtIn="false" value="rte_mbuf"/>
 									<listOptionValue builtIn="false" value="rte_ring"/>
-									<listOptionValue builtIn="false" value="rte_pmd_ring"/>
 									<listOptionValue builtIn="false" value="rte_pmd_e1000"/>
 									<listOptionValue builtIn="false" value="rte_pmd_ixgbe"/>
-									<listOptionValue builtIn="false" value="rte_pmd_virtio"/>
 									<listOptionValue builtIn="false" value="ethdev"/>
 									<listOptionValue builtIn="false" value="pthread"/>
 									<listOptionValue builtIn="false" value="dl"/>
@@ -136,10 +134,8 @@
 									<listOptionValue builtIn="false" value="rte_mempool"/>
 									<listOptionValue builtIn="false" value="rte_mbuf"/>
 									<listOptionValue builtIn="false" value="rte_ring"/>
-									<listOptionValue builtIn="false" value="rte_pmd_ring"/>
 									<listOptionValue builtIn="false" value="rte_pmd_e1000"/>
 									<listOptionValue builtIn="false" value="rte_pmd_ixgbe"/>
-									<listOptionValue builtIn="false" value="rte_pmd_virtio"/>
 									<listOptionValue builtIn="false" value="ethdev"/>
 									<listOptionValue builtIn="false" value="pthread"/>
 									<listOptionValue builtIn="false" value="dl"/>
