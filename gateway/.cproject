@@ -29,6 +29,9 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/gateway/dpdk/build/include}&quot;"/>
 								</option>
 								<option id="gnu.cpp.compiler.option.other.other.567787763" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-std=c++11 -c -fmessage-length=0" valueType="string"/>
+								<option id="gnu.cpp.compiler.option.preprocessor.def.1206698936" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="RTE_MAX_LCORE=16"/>
+								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.256396100" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
 							</tool>
 							<tool id="cdt.managedbuild.tool.gnu.c.compiler.exe.debug.1529534168" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.exe.debug">
@@ -38,8 +41,23 @@
 							</tool>
 							<tool id="cdt.managedbuild.tool.gnu.c.linker.exe.debug.399565986" name="GCC C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.exe.debug"/>
 							<tool id="cdt.managedbuild.tool.gnu.cpp.linker.exe.debug.1388024789" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.exe.debug">
-								<option id="gnu.cpp.link.option.paths.344752333" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
+								<option id="gnu.cpp.link.option.paths.344752333" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/gateway/dpdk/build/lib}&quot;"/>
+								</option>
+								<option id="gnu.cpp.link.option.libs.160025038" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" valueType="libs">
+									<listOptionValue builtIn="false" value="rte_eal"/>
+									<listOptionValue builtIn="false" value="rte_timer"/>
+									<listOptionValue builtIn="false" value="rte_malloc"/>
+									<listOptionValue builtIn="false" value="rte_mempool"/>
+									<listOptionValue builtIn="false" value="rte_mbuf"/>
+									<listOptionValue builtIn="false" value="rte_ring"/>
+									<listOptionValue builtIn="false" value="rte_pmd_ring"/>
+									<listOptionValue builtIn="false" value="rte_pmd_e1000"/>
+									<listOptionValue builtIn="false" value="rte_pmd_ixgbe"/>
+									<listOptionValue builtIn="false" value="rte_pmd_virtio"/>
+									<listOptionValue builtIn="false" value="ethdev"/>
+									<listOptionValue builtIn="false" value="pthread"/>
+									<listOptionValue builtIn="false" value="dl"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.976980278" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
@@ -86,6 +104,9 @@
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/gateway/dpdk/build/include}&quot;"/>
 								</option>
 								<option id="gnu.cpp.compiler.option.other.other.1292123702" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-std=c++11 -c -fmessage-length=0" valueType="string"/>
+								<option id="gnu.cpp.compiler.option.preprocessor.def.1423813701" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="RTE_MAX_LCORE=16"/>
+								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1800601777" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
 							</tool>
 							<tool id="cdt.managedbuild.tool.gnu.c.compiler.exe.release.1404288894" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.exe.release">
@@ -95,8 +116,23 @@
 							</tool>
 							<tool id="cdt.managedbuild.tool.gnu.c.linker.exe.release.1425383167" name="GCC C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.exe.release"/>
 							<tool id="cdt.managedbuild.tool.gnu.cpp.linker.exe.release.345976756" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.exe.release">
-								<option id="gnu.cpp.link.option.paths.660533652" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
+								<option id="gnu.cpp.link.option.paths.660533652" name="Library search path (-L)" superClass="gnu.cpp.link.option.paths" valueType="libPaths">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/gateway/dpdk/build/lib}&quot;"/>
+								</option>
+								<option id="gnu.cpp.link.option.libs.2146152207" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" valueType="libs">
+									<listOptionValue builtIn="false" value="rte_timer"/>
+									<listOptionValue builtIn="false" value="rte_malloc"/>
+									<listOptionValue builtIn="false" value="rte_mempool"/>
+									<listOptionValue builtIn="false" value="rte_mbuf"/>
+									<listOptionValue builtIn="false" value="rte_ring"/>
+									<listOptionValue builtIn="false" value="ethdev"/>
+									<listOptionValue builtIn="false" value="rte_pmd_ring"/>
+									<listOptionValue builtIn="false" value="rte_pmd_e1000"/>
+									<listOptionValue builtIn="false" value="rte_pmd_ixgbe"/>
+									<listOptionValue builtIn="false" value="rte_pmd_virtio"/>
+									<listOptionValue builtIn="false" value="rte_eal"/>
+									<listOptionValue builtIn="false" value="pthread"/>
+									<listOptionValue builtIn="false" value="dl"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.1271481329" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
