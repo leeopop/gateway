@@ -130,6 +130,11 @@ static void init_nic(const string &inside_nic_mac, const string &outside_nic_mac
 
 		rte_eth_dev_info_get((uint8_t) port_idx, &dev_info);
 
+		sprintf(dev_addr_buf, "%04x:%02x:%02x.%u", dev_info.pci_dev->addr.domain,
+				dev_info.pci_dev->addr.bus,
+				dev_info.pci_dev->addr.devid,
+				dev_info.pci_dev->addr.function);
+
 		/* Check the available RX/TX queues. */
 		if (1 > dev_info.max_rx_queues)
 			rte_exit(EXIT_FAILURE, "port (%u, %s) does not support request number of rxq.\n",
